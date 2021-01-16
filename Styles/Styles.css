@@ -1,0 +1,175 @@
+
+body {
+
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.div-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1440px;
+}
+
+.div-main {
+    display: flex;
+    width: 1440px;
+
+    background: url(../Images/MaskGroup.png) no-repeat;
+}
+
+/* .a-nav {
+
+} */
+
+/* 
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: url(../Images/MaskGroup.png) no-repeat;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 1440px;
+    height: 581px;
+}
+
+.div-container {
+    display: flex;
+    justify-content: center;
+    width: 1440px;
+    height: 581px;
+}
+
+Главный
+
+.content_main {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 82.51px;
+}
+
+.div-logo {
+    display: flex;
+    align-items: center;
+}
+
+.div-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.div-navigation a{
+    margin-right: 100px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #2E2F22;
+    line-height: 25px;
+}
+
+.div-navigation a:last-of-type{
+    margin-right: 0;
+}
+
+Статьи
+
+.content_article {
+    width: 1200px;
+    height: 1000px;
+    margin: 83px 120px 85px;
+}
+
+.main_article {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+.main_article h1 {
+    margin: 0;
+    font-family: 'Spectral SC';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 55px;
+    color: #2E2F22;
+}
+
+.main_article select {
+    width: 203px;
+    height: 46px;
+    border-radius: 10px;
+    appearance: none;
+    background: #D7D1C9 url("../Images/Arrow.png") no-repeat 162px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2E2F22;
+    padding-left:  12px ;
+}
+
+.main_photo_article {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.photo_article {
+    width: 387px;
+}
+
+.photo_article:nth-last-of-type(2) {
+    width: 823,28px;
+    height: 552px;
+    background: url('../Images/Roses.png') no-repeat;
+    background-size: 823,28px 552px;
+}
+
+.photo_article:nth-last-of-type(1) {
+    width: 823,28px;
+    height: 552px;
+    background: url('../Images/Cake.png') no-repeat;
+    background-size: 823,28px 552px;
+}
+
+.tegs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo_article h3 {
+    font-family: "Spectral SC";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2E2F22;
+}
+
+.photo_article .description {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #2E2F22;
+    margin: 0;
+}
+
+.photo_article p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(46, 47, 34, 0.7);
+} */
