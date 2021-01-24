@@ -1,22 +1,49 @@
 
 body {
-
     margin: 0;
+    font-style: normal;
+    font-weight: normal;
     font-family: 'Open Sans', sans-serif;
 }
 
-.div-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1440px;
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: url("../Images/MaskGroup.png") no-repeat;
+
 }
 
-.div-main {
-    display: flex;
-    width: 1440px;
-
-    background: url(../Images/MaskGroup.png) no-repeat;
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+.header {
+    display: flex;
+    height: 581px;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav-a {
+    padding-right: 83px;
+
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    color: #2E2F22;
+}
+
+.nav-a:last-of-type {
+    padding-right: 0;
+}
+
 
 /* .a-nav {
 
