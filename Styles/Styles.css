@@ -6,6 +6,8 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/*Обертка*/
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -18,11 +20,17 @@ body {
     margin: 0 auto;
 }
 
+/*Hadder*/
+
 .header {
     display: flex;
     height: 581px;
     justify-content: space-between;
     align-items: start;
+}
+
+.header img {
+    padding-top: 4px;
 }
 
 .nav {
@@ -33,7 +41,7 @@ body {
 
 .nav-a {
     padding-right: 83px;
-
+    padding-top: 33px;
     text-decoration: none;
     font-size: 18px;
     line-height: 25px;
@@ -44,6 +52,38 @@ body {
     padding-right: 0;
 }
 
+
+.content_article {
+    margin-top: 83px;
+}
+
+.main_article {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+.main_article h1 {
+    margin: 0;
+    font-family: Spectral SC;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 55px;
+    color: #2E2F22;
+}
+
+#id_theme_selection {
+    width: 203px;
+    height: 46px;
+    border-radius: 10px;
+    background: #D7D1C9 url("../Images/Arrow.png") no-repeat 162px;
+    appearance: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2E2F22;
+}
 
 /* .a-nav {
 
