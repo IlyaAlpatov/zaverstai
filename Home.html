@@ -4,25 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My blog</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Styles/Styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>   
   
   <div class="container">
     <div class="wrapper">
       <header class="header">
-        <img src="../Images/Logo.png" alt="Logo">
-        <nav class="nav">
-          <a class="nav-a" href="">Статьи</a>
-          <a class="nav-a" href="">Обо нме</a>
-          <a class="nav-a" href="">Портфолио</a>
-          <a class="nav-a" href="">Написать мне</a>
+        <img class="header__logo" src="../Images/Logo.png" alt="Logo">
+        <nav>
+          <ul class="nav">
+            <li class="nav__item"><a class="nav__link" href="">Статьи</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Обо нме</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Портфолио</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Написать мне</a></li>
           </ul>
         </nav>
       </header>
       
+      <div class="articles">
+        <div class="title-article">
+          <h1 class="articles__title">Все статьи</h1>
+          <select name="articles__theme-selection" id="id_theme_selection">
+            <option value="Выбрать тему">Выбрать тему</option>
+          </select>
+        </div>
+
+        <div class="articles__mini">
+          <div class="article">
+            <img src="" alt="" class="article__img">
+            <h2 class="article__title"></h2>
+            <p class="article__description"></p>
+            <span class="article__text"></span>
+            <span class="article__text"></span>
+          </div>
+        </div>
+      </div>
+
       <div class="content_article">
         <div class="main_article">
           <h1>Все статьи</h1>

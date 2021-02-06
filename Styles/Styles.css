@@ -29,7 +29,7 @@ body {
     align-items: start;
 }
 
-.header img {
+.header__logo {
     padding-top: 4px;
 }
 
@@ -37,36 +37,36 @@ body {
     display: flex;
     list-style: none;
     padding-left: 0;
+    margin-top: 33px;
 }
 
-.nav-a {
+.nav__item:not(.nav__item:last-of-type) {
     padding-right: 83px;
-    padding-top: 33px;
+}
+
+.nav__link {
     text-decoration: none;
     font-size: 18px;
     line-height: 25px;
     color: #2E2F22;
 }
 
-.nav-a:last-of-type {
-    padding-right: 0;
-}
+/* Content */
 
-
-.content_article {
+.articles {
     margin-top: 83px;
 }
 
-.main_article {
+.title-article {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 60px;
 }
 
-.main_article h1 {
+.articles__title {
     margin: 0;
-    font-family: Spectral SC;
+    font-family: 'Spectral SC', serif;
     font-weight: bold;
     font-size: 36px;
     line-height: 55px;
