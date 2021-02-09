@@ -10,109 +10,98 @@
     <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Styles/Styles.css">
 </head>
-<body>   
-  
-  <div class="container">
-    <div class="wrapper">
-      <header class="header">
-        <img class="header__logo" src="../Images/Logo.png" alt="Logo">
-        <nav>
-          <ul class="nav">
-            <li class="nav__item"><a class="nav__link" href="">Статьи</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Обо нме</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Портфолио</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Написать мне</a></li>
-          </ul>
-        </nav>
+<body>
+  <header class="page-header">
+        <div class="wrapper">
+          <a href="" class="header__link">
+            <img class="header__logo" src="../Images/Logo.png" alt="Logo">
+          </a>
+          <nav>
+            <ul class="nav">
+              <li class="nav__item"><a class="nav__link" href="#articles">Статьи</a></li>
+              <li class="nav__item"><a class="nav__link" href="">Обо нме</a></li>
+              <li class="nav__item"><a class="nav__link" href="">Портфолио</a></li>
+              <li class="nav__item"><a class="nav__link" href="">Написать мне</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
-      
-      <div class="articles">
-        <div class="title-article">
-          <h1 class="title-article__title">Все статьи</h1>
-          <select name="articles__theme-selection" id="id_theme_selection">
-            <option value="Выбрать тему">Выбрать тему</option>
-          </select>
-        </div>
 
-        <div class="articles__mini">
-          <div class="article">
-            <img src="" alt="" class="article__img">
-            <h2 class="article__title"></h2>
-            <p class="article__description"></p>
-            <span class="article__text"></span>
-            <span class="article__text"></span>
-          </div>
-        </div>
-      </div>
-
-      <div class="content_article">
-        <div class="main_article">
-          <h1>Все статьи</h1>
-          <select name="theme_selection" id="id_theme_selection">
-            <option value="Выбрать тему">Выбрать тему</option>
-          </select>
-        </div>
-    
-        <div class="main_photo_article">
-          <div class="photo_article">
-            <img src="../Images/Сity.png" alt="Сity">
-            <h3>Путешествие в Берлин в августе</h3>
-            <p class="description">Летний месяц я провела в столице Германии
-              вместе с друзьями. И вот как это было!</p>
-            <div class="tegs">
-            <p>Теги: путешествия</p>
-            <p>29.09.2020</p>
-            </div>
-          </div>
-    
-          <div class="photo_article">
-            <img src="../Images/Coffee.png" alt="Coffee">
-            <h3>Где выпить колдбрю в Москве</h3>
-            <p class="description">Собрала для вас список любимых кофеен,
-              где подают лучший летний напиток.</p>
-              <div class="tegs">
-                <p>Теги: город</p>
-                <p>24.07.2020</p>
+      <main>
+        <div class="wrapper">
+          <section class="articles" id="articles">
+            <header class="articles-header">
+              <h2 class="articles__title">Все статьи</h2>
+              <div>
+                <select name="theme-selection" class="articles__theme-selection">
+                  <option value="all" selected>Выбрать тему</option>
+                  <option value="travel">Путешествия</option>
+                  <option value="city">Город</option>
+                  <option value="books">Книги</option>
+                  <option value="photo">Фотографии</option>
+                  <option value="recipe">Рецепты</option>
+                  <option value="all">Все статьи</option>
+                </select>
               </div>
-          </div>
-    
-          <div class="photo_article">
-            <img src="../Images/Books.png" alt="Books">
-            <h3>Прочитано: книжные рекомендации</h3>
-            <p class="description">Рассказываю о прочитанных за последнее
-              время книгах: фавориты и провалы.</p>
-            <div class="tegs">
-            <p>Теги: книги</p>
-            <p>15.07.2020</p>
+            </header>
+
+            <div class="articles__list">
+              <div class="article">
+                <img src="/Images/article1.png" alt="" class="article__img">
+                <h3 class="article__title">Путешествие в Берлин в августе</h3>
+                <p class="article__description">Летний месяц я провела в столице
+                Германии вместе с друзьями. И вот как это было!</p>
+                <div class="article__footer">
+                  <span class="article__text">Теги: путешествия</span>
+                  <time class="article__text" datetime="2020-09-29">29.09.2020</time>
+                </div>
+              </div>
+
+              <div class="article">
+                <img src="/Images/article2.png" alt="" class="article__img">
+                <h3 class="article__title">Где выпить колдбрю в Москве</h3>
+                <p class="article__description">Собрала для вас список любимых кофеен,
+                где подают лучший летний напиток.</p>
+                <div class="article__footer">
+                  <span class="article__text">Теги: город</span>
+                  <time class="article__text" datetime="2020-07-24">24.07.2020</time>
+                </div>
+              </div>
+
+              <div class="article">
+                <img src="/Images/article3.png" alt="" class="article__img">
+                <h3 class="article__title">Прочитано: книжные рекомендации</h3>
+                <p class="article__description">Рассказываю о прочитанных за последнее
+                время книгах: фавориты и провалы.</p>
+                <div class="article__footer">
+                  <span class="article__text">Теги: книги</span>
+                  <time class="article__text" datetime="2020-07-15">15.07.2020</time>
+                </div>
+              </div>
+
+              <div class="article article_4 article_white">
+                <h3 class="article__title article__title_white">Снимки на плёнку</h3>
+                <p class="article__description article__description_white">Поделилась с вами весенними фотографиями,
+                и секретами удачных снимков.</p>
+                <div class="article__footer">
+                  <span class="article__text article__text_white">Теги: фотографии</span>
+                  <time class="article__text article__text_white" datetime="2020-06-29">29.06.2020</time>
+                </div>
+              </div>
+
+              <div class="article article_5 article_white">
+                <h3 class="article__title article__title_white">Домашний чизкейк</h3>
+                <p class="article__description article__description_white">Что может быть лучше чизкейка с сезонными
+                ягодами? Только домашний чизкейк!</p>
+                <div class="article__footer">
+                  <span class="article__text article__text_white">Теги: рецепты</span>
+                  <time class="article__text article__text_white" datetime="2020-06-24">24.06.2020</time>
+                </div>
             </div>
           </div>
-    
-          <div class="photo_article">
-            <h3>Прочитано: книжные рекомендации</h3>
-            <p class="description">Рассказываю о прочитанных за последнее
-              время книгах: фавориты и провалы.</p>
-            <div class="tegs">
-            <p>Теги: книги</p>
-            <p>15.07.2020</p>
-            </div>
-          </div>
-    
-          <div class="photo_article">
-            <h3>Прочитано: книжные рекомендации</h3>
-            <p class="description">Рассказываю о прочитанных за последнее
-              время книгах: фавориты и провалы.</p>
-            <div class="tegs">
-            <p>Теги: книги</p>
-            <p>15.07.2020</p>
-            </div>
-          </div>
+          <a class="articles__button" href="" ></a>
+          </section>
         </div>
-      </div>
-
-    </div>
-  </div>
-
- 
-  
+      </main>
 </body>
 </html>

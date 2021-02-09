@@ -1,4 +1,8 @@
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-style: normal;
@@ -8,25 +12,28 @@ body {
 
 /*Обертка*/
 
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-    background: url("../Images/MaskGroup.png") no-repeat;
-
-}
-
 .wrapper {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
 }
 
-/*Hadder*/
+.page-header .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
 
-.header {
+main {
+    display: flex;
+}
+
+/*Шапка*/
+
+.page-header {
     display: flex;
     height: 581px;
-    justify-content: space-between;
     align-items: start;
+    background: url("../Images/MaskGroup.png") no-repeat;
+    background-size: 100% auto;
 }
 
 .header__logo {
@@ -51,13 +58,14 @@ body {
     color: #2E2F22;
 }
 
-/* Content */
+/* Статьи */
 
 .articles {
     margin-top: 83px;
+    color: #2E2F22;
 }
 
-.title-article {
+.articles-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -70,10 +78,9 @@ body {
     font-weight: bold;
     font-size: 36px;
     line-height: 55px;
-    color: #2E2F22;
 }
 
-#id_theme_selection {
+.articles__theme-selection {
     width: 203px;
     height: 46px;
     border-radius: 10px;
@@ -82,14 +89,90 @@ body {
     padding: 12px 20px;
     font-size: 16px;
     line-height: 22px;
-    color: #2E2F22;
+}
+
+.articles__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.articles__button {
+
+}
+
+.article {
+    max-width: 387px;
+    margin-bottom: 62px;
+}
+
+.article_4 {
+    background: url("../Images/article4.png") no-repeat;
+
+}
+
+.article_5 {
+    background: url("../Images/article5.png") no-repeat;
+
+}
+
+.article_white {
+    min-width: 590px;
+    min-height: 552px;
+    color: #FFFFFF;
+    padding-left: 82px;
+    padding-right: 79px;
+    padding-bottom: 61px;
+}
+
+.article__title {
+    font-family: 'Spectral SC', serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    padding-top: 27px;
+    padding-bottom: 8px;
+    margin: 0;
+}
+
+.article__title_white {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 359px;
+}
+
+.article__description {
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 12px;
+    margin: 0;
+}
+
+.article__description_white {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.article__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article__text {
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(46, 47, 34, 0.7);
+}
+
+.article__text_white {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 /* .a-nav {
 
 } */
 
-/* 
+/*
 body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
