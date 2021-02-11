@@ -173,7 +173,22 @@
 
           <section class="write-me" id="write">
             <h2 class="page__title">Написать мне</h2>
-
+            <form class="write__form" action="">
+              <div class="text__block">
+                <label class="write__label" for="name">Ваше имя</label>
+                <input class="write__text" id="name" type="text" value="Иван Иванов">
+              </div>
+              <div class="text__block">
+                <label class="write__label"  for="email">Email</label>
+                <input class="write__text" id="email" type="email" value="google@gmail.com">
+              </div>
+              <div class="text__block">
+                <label class="write__label" for="message">Сообщение</label>
+              <textarea class="write__textarea" name="message" id="message" cols="30" rows="10">Напишите здесь ваше сообщение.
+              </textarea>
+              </div>
+              <button class="write__button">Отправить</button>
+            </form>
           </section>
         </div>
       </main>
