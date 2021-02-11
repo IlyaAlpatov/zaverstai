@@ -26,6 +26,16 @@ main {
     display: flex;
 }
 
+.page__title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Spectral SC', serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 55px;
+    margin: 0;
+}
+
 /*Шапка*/
 
 .page-header {
@@ -165,12 +175,12 @@ main {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.articles__button {
+.show-more__button {
     display: flex;
     justify-content: center;
 }
 
-.button-articles__link {
+.show-more__link {
     text-decoration: none;
     border: 1px solid #202117;
     border-radius: 10px;
@@ -184,16 +194,6 @@ main {
 
 .autobiography {
     margin-top: 85px;
-}
-
-.autobiography__title {
-    display: flex;
-    justify-content: center;
-    font-family: 'Spectral SC', serif;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 55px;
-    margin: 0;
 }
 
 .autobiography__content {
@@ -243,22 +243,17 @@ main {
     line-height: 0.85;
 }
 
+/* Портфолио */
+
 .portfolio {
     margin-top: 84.85px;
-}
-
-.portfolio__header {
-    display: flex;
-    justify-content: center;
-    font-family: 'Spectral SC', serif;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 55px;
 }
 
 .portfolio__list {
     display: flex;
     justify-content: space-between;
+    margin-top: 49px;
+    margin-bottom: 104px;
 }
 
 .portfolio__item {
@@ -266,7 +261,8 @@ main {
     flex-direction: column;
     align-items: center;
     width: 387px;
-    height: 525px;
+    height: 528px;
+    text-align: center;
 }
 
 .portfolio__item-1 {
@@ -275,6 +271,7 @@ main {
 
 .portfolio__item-2 {
     background: url('../Images/portfolio2.png') no-repeat;
+    color: #FFFFFF;
 }
 
 .portfolio__item-3 {
@@ -283,6 +280,7 @@ main {
 
 .portfolio__title {
     font-family: 'Spectral SC', serif;
+    margin: 0;
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
@@ -291,6 +289,8 @@ main {
 }
 
 .portfolio__subtitle {
+    max-width: 336px;
+    margin: 0;
     font-family: 'Spectral SC', serif;
     font-weight: bold;
     font-size: 18px;
@@ -299,8 +299,22 @@ main {
 }
 
 .portfolio__description {
-    max-width: 277px;
+    margin: 0;
+    max-width: 351px;
     font-size: 16px;
     line-height: 26px;
-    text-align: center;
+}
+
+.portfolio__description-1 {
+    max-width: 277px;
+}
+
+.portfolio__description-2 {
+    max-width: 324px;
+}
+
+/* Написать мне */
+
+.write-me {
+    margin-top: 85px;
 }
