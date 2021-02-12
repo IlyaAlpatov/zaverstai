@@ -237,10 +237,8 @@ main {
     border-left: 3px solid #D7D1C9;
 }
 
-.underlined {
-    border-bottom: 1px solid currentColor;
-    display: inline-block;
-    line-height: 0.85;
+.form-link {
+    color: #2E2F22;
 }
 
 /* Портфолио */
@@ -325,6 +323,7 @@ main {
 .write__form {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 996px;
     height: 637px;
     margin-top: 49px;
@@ -336,6 +335,10 @@ main {
 .text__block {
     display: flex;
     flex-direction: column;
+}
+
+.text__block:first-of-type {
+    margin-right: 20px;
 }
 
 .write__label {
@@ -379,7 +382,6 @@ main {
 }
 
 .write__button {
-
     border: 1px solid #202117;
     box-sizing: border-box;
     border-radius: 10px;
@@ -391,5 +393,34 @@ main {
     color: #202117;
     text-transform: uppercase;
     background: transparent;
-    justify-self: center;
+    margin-top: 20px;
+}
+
+/* Подвал */
+
+.page-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 81px;
+    background: #D7D1C9;
+    height: 181px;
+    width: auto;
+    padding-top: 65px;
+}
+
+.footer__list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer__item:not(.footer__item:last-of-type) {
+    padding-right: 120px;
+}
+
+.footer__link {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    color: #2E2F22;
 }
