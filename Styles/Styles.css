@@ -22,10 +22,6 @@ body {
     justify-content: space-between;
 }
 
-main {
-    display: flex;
-}
-
 .page__title {
     display: flex;
     justify-content: center;
@@ -46,8 +42,18 @@ main {
     background-size: 100% auto;
 }
 
+.page-header-article {
+    background: url("../Images/backArticle.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.header__link:hover .header__logo {
+    filter: opacity(70%);
+}
+
 .header__logo {
     padding-top: 4px;
+    transition-duration: 1s;
 }
 
 .nav {
@@ -102,6 +108,8 @@ main {
 }
 
 .articles__list {
+    padding-left: 0;
+    list-style: none;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -113,14 +121,18 @@ main {
     margin-bottom: 62px;
 }
 
-.article_4 {
-    background: url("../Images/article4.png") no-repeat;
-
+.article__img {
+    transition-duration: 0.8s;
 }
 
-.article_5 {
-    background: url("../Images/article5.png") no-repeat;
+.article:hover .article__img {
+    filter: blur(2px);
+}
 
+.img-white {
+    position: absolute;
+    z-index: -1;
+    right: 0;
 }
 
 .article_white {
@@ -130,6 +142,7 @@ main {
     padding-left: 82px;
     padding-right: 79px;
     padding-bottom: 61px;
+    position: relative;
 }
 
 .article__title {
@@ -261,6 +274,11 @@ main {
     width: 387px;
     height: 528px;
     text-align: center;
+    transition-duration: 0.8s;
+}
+
+.portfolio__item:hover {
+    opacity: 0.8;
 }
 
 .portfolio__item-1 {
@@ -294,6 +312,7 @@ main {
     font-size: 18px;
     line-height: 28px;
     margin-bottom: 17px;
+    
 }
 
 .portfolio__description {
@@ -309,6 +328,10 @@ main {
 
 .portfolio__description-2 {
     max-width: 324px;
+}
+
+.portfolio__button {
+    text-transform: uppercase;
 }
 
 /* Написать мне */
@@ -364,6 +387,15 @@ main {
     padding-left: 20px;
 }
 
+.write__text:invalid {
+    border-color: red;
+    color: red;
+}
+
+.write__text::placeholder {
+    color: #202117;
+}
+
 .write__textarea {
     background: rgba(255, 255, 255, 0.4);
     border: 1px solid #000000;
@@ -371,6 +403,7 @@ main {
     border-radius: 10px;
     height: 293px;
     width: 837px;
+    resize: none;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 22px;
@@ -379,6 +412,10 @@ main {
     padding: 0;
     padding-top: 20px;
     padding-left: 20px;
+}
+
+.write__textarea::placeholder {
+    color: #202117;
 }
 
 .write__button {
@@ -423,4 +460,248 @@ main {
     font-size: 18px;
     line-height: 25px;
     color: #2E2F22;
+}
+
+/* Страница статей */
+
+/* Статья с мотивацией */
+
+.motivation {
+    color: #2E2F22;
+    margin-top: 85px;
+    margin-left: 119px;
+    width: 998px;
+}
+
+.motivation__title {
+    font-family: 'Spectral SC', serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 55px;
+    margin: 0;
+    margin-bottom: 6px;
+}
+
+.motivation__tegs {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.motivation__time {
+    margin-left: 18px;
+}
+
+.motivation__text {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.text-mini {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.motivation__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.motivation__like {
+    display: flex;
+    align-items: flex-end;
+}
+
+.like__link {
+    text-decoration: none;
+    line-height: 0;
+}
+
+.like__link:hover path,
+.like__link:active path {
+    fill: firebrick;
+}
+
+.like__counter {
+    font-size: 24px;
+    line-height: 26px;
+    margin-left: 14px;
+}
+
+.motivation__icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons__link:not(.icons__link:last-of-type) {
+    margin-right: 32px;
+}
+
+.icons__link:hover path,
+.icons__link:active path {
+    fill: firebrick;
+}
+
+.motivation__all-articles {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.all-articles__link {
+    display: flex
+}
+
+.all-articles__link:hover .all-articles__img {
+    transform: translateX(30px);
+    transition: 0.5s;
+}
+
+.all-articles__link:hover {
+    color: #5E5F55;
+}
+
+.all-articles__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    margin-right: 26px;
+}
+
+/* Комментарии */
+
+.comments {
+    margin-top: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 793px;
+    margin-left: 121px;
+}
+
+.comments__list {
+    background: #ECE1E1;
+    border-radius: 10px;
+    min-height: 429px;
+    width: 100%;
+    padding-left: 101px;
+    padding-top: 44px;
+    padding-bottom: 49px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item__block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.item__name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: 13px;
+}
+
+.item__comment {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+}
+
+.comments__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    margin: 0;
+    margin-top: 77px;
+    margin-left: 81px;
+}
+
+.comments__form {
+    display: flex;
+    margin-left: 81px;
+    margin-top: 69px;
+}
+
+.form__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 81px;
+}
+
+.comments__label {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+.comments__input {
+    font-size: 16px;
+    line-height: 22px;
+    border: 0;
+    color: #2E2F22;
+    border-bottom: 1px solid #2E2F22;
+    outline: none;
+    padding-bottom: 15px;
+}
+
+.comments-required:invalid {
+    border-color: red;
+    color: red;
+}
+
+.comments__input::placeholder {
+    color: #2E2F22;
+}
+
+.comments__button {
+    border: 1px solid #202117;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 22px;
+    background: #FFFFFF;
+    padding: 12px 70px;
+}
+
+.comments__textarea {
+    border: 1px solid #2E2F22;
+    border-radius: 10px;
+    width: 406px;
+    height: 208px;
+    resize: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0;
+    padding-top: 18px;
+    padding-left: 20px;
+}
+
+.comments__textarea::placeholder {
+    color: #2E2F22;
+}
+
+/* Общие изменения */
+
+a:hover {
+    color: cadetblue;
+}
+
+.hidden {
+    display: none;
+}
+
+.disabled {
+    border-color: red;
+    color: red;
+}
+
+.like {
+    color: red;
+    fill: firebrick;
 }
